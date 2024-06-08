@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>İletişim | STSchools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        nav {
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        footer p {
+            line-height: 1.6;
+            color: white;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        section img{
+            width: 250px;
+            height: 250px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            bottom: 0;
+            width: 100%;
+        }
+        main section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px; 
+            margin-bottom: 55px;
+        }
+        .container{
+            margin: 20px;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact-info {
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px;
+            text-align: center;
+            padding: 50px;
+            width: 100vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-right: 10px solid rgb(0, 123, 255);
+            transition: .35s ease;
+            flex: 1;
+        }
+        .contact-info:hover{
+            background-color: rgb(210, 210, 210);
+            cursor: pointer;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="STSchools Logo"></a>
+        </div>
+        <h1>İletişim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="lesson.html">Dersler</a></li>
+                <li><a href="quiz.html">Test</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact-info">
+            <h1>İletişim</h1>
+        <p>Bizimle iletişime geçebilirsiniz.</p>
+        </div>
+        <div class="contact-info">
+            <h2>Adres <i style="color: rgb(0, 123, 255);" class='bx bxs-location-plus'></i></h2>
+        <p><span style="color: rgb(0, 123, 255);">ST</span>Schools</p>
+        <p>Fatih Mah. İş Merkezi Cad. No:35</p>
+        <p>İstanbul, Türkiye</p>
+        </div>
+        <div class="contact-info">
+            <h2>Telefon<i style="color: rgb(0, 123, 255); margin-left: 5px;" class='bx bxs-phone'></i></h2>
+        <p>Telefon: +90 543 848 48 97</p>
+        </div>
+        <div class="contact-info">
+            <h2>E-posta<i class='bx bxl-gmail' style='color: rgb(0, 123, 255); margin-left: 5px;' ></i></h2>
+            <p>E-posta: tolgaauzn5534@gmail.com</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 <span style="color: rgb(0, 183, 255);">ST</span>Schools tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dersleri | STSchools</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="STSchools Logo"></a>
+        </div>
+        <h1>Dersler</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="lesson.html">Dersler</a></li>
+                <li><a href="quiz.html">Test</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>HTML Temel Etiketler</h2>
+            
+            <article>
+                <h3>Başlık Etiketleri</h3>
+                <p>HTML'de başlıklar <code>&lt;h1&gt;</code> ile <code>&lt;h6&gt;</code> etiketleri arasında tanımlanır.</p>
+                <p>Büyükten küçüğe doğru gider.</p>
+                <pre><code>&lt;h1&gt;Bu bir H1 başlığıdır&lt;/h1&gt;</code></pre>
+                <div class="output">
+                    <h1>Bu bir H1 başlığıdır</h1>
+                </div>
+                <pre><code>&lt;h2&gt;Bu bir H2 başlığıdır&lt;/h2&gt;</code></pre>
+                <div class="output">
+                    <h2>Bu bir H2 başlığıdır</h2>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Paragraf Etiketi</h3>
+                <p>Paragraf metinleri <code>&lt;p&gt;</code> etiketi ile tanımlanır.</p>
+                <pre><code>&lt;p&gt;Bu bir paragraf metnidir.&lt;/p&gt;</code></pre>
+                <div class="output">
+                    <p>Bu bir paragraf metnidir.</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Bağlantı Etiketi</h3>
+                <p>HTML'de bağlantılar <code>&lt;a&gt;</code> etiketi ile tanımlanır.</p>
+                <pre><code>&lt;a href="https://www.example.com"&gt;Bu bir bağlantıdır&lt;/a&gt;</code></pre>
+                <div class="output">
+                    <a href="https://www.example.com">Bu bir bağlantıdır</a>
+                </div>
+            </article>
+
+            <article>
+                <h3>Görüntü Etiketi</h3>
+                <p>Görüntüler <code>&lt;img&gt;</code> etiketi ile sayfaya eklenir.</p>
+                <pre><code>&lt;img src="image.jpg" alt="Açıklama"&gt;</code></pre>
+                <div class="output">
+                    <img src="https://via.placeholder.com/150" alt="Örnek Görüntü">
+                </div>
+            </article>
+            
+            <article>
+                <h3>Liste Etiketleri</h3>
+                <p>Sıralı ve sırasız listeler <code>&lt;ol&gt;</code> ve <code>&lt;ul&gt;</code> etiketleri ile tanımlanır. Liste elemanları ise <code>&lt;li&gt;</code> etiketi ile tanımlanır.</p>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Birinci Eleman&lt;/li&gt;
+    &lt;li&gt;İkinci Eleman&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+    &lt;li&gt;Birinci Eleman&lt;/li&gt;
+    &lt;li&gt;İkinci Eleman&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                <div class="output">
+                    <ul>
+                        <li>Birinci Eleman</li>
+                        <li>İkinci Eleman</li>
+                    </ul>
+                    <ol>
+                        <li>Birinci Eleman</li>
+                        <li>İkinci Eleman</li>
+                    </ol>
+                </div>
+            </article>
+
+            <article>
+                <h3>Form Etiketleri</h3>
+                <p>HTML formları kullanıcıdan bilgi toplamak için kullanılır. Formlar <code>&lt;form&gt;</code> etiketi ile tanımlanır.</p>
+                <pre><code>&lt;form&gt;
+    &lt;label for="name"&gt;İsim:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Gönder"&gt;
+&lt;/form&gt;</code></pre>
+                <div class="output">
+                    <form>
+                        <label for="name">İsim:</label>
+                        <input type="text" id="name" name="name">
+                        <input type="submit" value="Gönder">
+                    </form>
+                </div>
+            </article>
+            <article>
+                <h3>Tablo Etiketleri</h3>
+                <p>Tablolar <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> ve <code>&lt;td&gt;</code> etiketleri ile tanımlanır.</p>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Başlık 1&lt;/th&gt;
+        &lt;th&gt;Başlık 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Veri 1&lt;/td&gt;
+        &lt;td&gt;Veri 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                <div class="output">
+                    <table border="1">
+                        <tr>
+                            <th>Başlık 1</th>
+                            <th>Başlık 2</th>
+                        </tr>
+                        <tr>
+                            <td>Veri 1</td>
+                            <td>Veri 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <article>
+                <h3>Video Etiketi</h3>
+                <p>Videolar <code>&lt;video&gt;</code> etiketi ile sayfaya eklenir.</p>
+                <pre><code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    Tarayıcınız video etiketini desteklemiyor.
+&lt;/video&gt;</code></pre>
+                <div class="output">
+                    <video width="320" height="240" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </div>
+            </article>
+
+            <article>
+                <h3>Ses Etiketi</h3>
+                <p>Ses dosyaları <code>&lt;audio&gt;</code> etiketi ile sayfaya eklenir.</p>
+                <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mp3"&gt;
+    Tarayıcınız ses etiketini desteklemiyor.
+&lt;/audio&gt;</code></pre>
+                <div class="output">
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
+                        Tarayıcınız ses etiketini desteklemiyor.
+                    </audio>
+                </div>
+            </article>
+
+            <article>
+                <h3>Yorum Etiketleri</h3>
+                <p>HTML'de yorumlar <code>&lt;!-- Yorum --&gt;</code> şeklinde tanımlanır.</p>
+                <pre><code>&lt;!-- Bu bir HTML yorumudur. Tarayıcıda görünmez. --</code></pre>
+            </article>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 <span style="color: rgb(0, 183, 255);">ST</span>Schools tüm hakları saklıdır.</p>
+        </footer>
+    </body>
+</html>
+

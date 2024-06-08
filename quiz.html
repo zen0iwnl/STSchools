@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Test | STSchools</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .quiz-result {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        .output {
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="STSchools Logo"></a>
+        </div>
+        <h1>Test</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="lesson.html">Dersler</a></li>
+                <li><a href="quiz.html">Test</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Öğrendiklerinizi Test Edin</h2>
+            <form>
+                <article>
+                    <h3>1. HTML'de en büyük başlık etiketi hangisidir?</h3>
+                    <input type="radio" id="q1a" name="q1" value="&lt;h1&gt;">
+                    <label for="q1a">&lt;h1&gt;</label><br>
+                    <input type="radio" id="q1b" name="q1" value="&lt;h3&gt;">
+                    <label for="q1b">&lt;h3&gt;</label><br>
+                    <input type="radio" id="q1c" name="q1" value="&lt;h6&gt;">
+                    <label for="q1c">&lt;h6&gt;</label><br>
+                </article>
+                
+                <article>
+                    <h3>2. Paragraf metinleri hangi HTML etiketi ile tanımlanır?</h3>
+                    <input type="radio" id="q2a" name="q2" value="&lt;div&gt;">
+                    <label for="q2a">&lt;div&gt;</label><br>
+                    <input type="radio" id="q2b" name="q2" value="&lt;p&gt;">
+                    <label for="q2b">&lt;p&gt;</label><br>
+                    <input type="radio" id="q2c" name="q2" value="&lt;span&gt;">
+                    <label for="q2c">&lt;span&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>3. HTML'de bağlantılar hangi etiketle tanımlanır?</h3>
+                    <input type="radio" id="q3a" name="q3" value="&lt;a&gt;">
+                    <label for="q3a">&lt;a&gt;</label><br>
+                    <input type="radio" id="q3b" name="q3" value="&lt;link&gt;">
+                    <label for="q3b">&lt;link&gt;</label><br>
+                    <input type="radio" id="q3c" name="q3" value="&lt;href&gt;">
+                    <label for="q3c">&lt;href&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>4. HTML'de bir görüntü eklemek için hangi etiket kullanılır?</h3>
+                    <input type="radio" id="q4a" name="q4" value="&lt;picture&gt;">
+                    <label for="q4a">&lt;picture&gt;</label><br>
+                    <input type="radio" id="q4b" name="q4" value="&lt;img&gt;">
+                    <label for="q4b">&lt;img&gt;</label><br>
+                    <input type="radio" id="q4c" name="q4" value="&lt;image&gt;">
+                    <label for="q4c">&lt;image&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>5. Sıralı listeler hangi HTML etiketi ile tanımlanır?</h3>
+                    <input type="radio" id="q5a" name="q5" value="&lt;ol&gt;">
+                    <label for="q5a">&lt;ol&gt;</label><br>
+                    <input type="radio" id="q5b" name="q5" value="&lt;ul&gt;">
+                    <label for="q5b">&lt;ul&gt;</label><br>
+                    <input type="radio" id="q5c" name="q5" value="&lt;li&gt;">
+                    <label for="q5c">&lt;li&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>6. HTML formları kullanıcıdan bilgi toplamak için hangi etiketle tanımlanır?</h3>
+                    <input type="radio" id="q6a" name="q6" value="&lt;form&gt;">
+                    <label for="q6a">&lt;form&gt;</label><br>
+                    <input type="radio" id="q6b" name="q6" value="&lt;input&gt;">
+                    <label for="q6b">&lt;input&gt;</label><br>
+                    <input type="radio" id="q6c" name="q6" value="&lt;label&gt;">
+                    <label for="q6c">&lt;label&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>7. HTML'de tablolar hangi etiketlerle tanımlanır?</h3>
+                    <input type="radio" id="q7a" name="q7" value="&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;">
+                    <label for="q7a">&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</label><br>
+                    <input type="radio" id="q7b" name="q7" value="&lt;div&gt;, &lt;span&gt;, &lt;ul&gt;, &lt;li&gt;">
+                    <label for="q7b">&lt;div&gt;, &lt;span&gt;, &lt;ul&gt;, &lt;li&gt;</label><br>
+                    <input type="radio" id="q7c" name="q7" value="&lt;section&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;">
+                    <label for="q7c">&lt;section&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>8. HTML'de videolar hangi etiketle eklenir?</h3>
+                    <input type="radio" id="q8a" name="q8" value="&lt;video&gt;">
+                    <label for="q8a">&lt;video&gt;</label><br>
+                    <input type="radio" id="q8b" name="q8" value="&lt;media&gt;">
+                    <label for="q8b">&lt;media&gt;</label><br>
+                    <input type="radio" id="q8c" name="q8" value="&lt;movie&gt;">
+                    <label for="q8c">&lt;movie&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>9. HTML'de ses dosyaları hangi etiketle eklenir?</h3>
+                    <input type="radio" id="q9a" name="q9" value="&lt;audio&gt;">
+                    <label for="q9a">&lt;audio&gt;</label><br>
+                    <input type="radio" id="q9b" name="q9" value="&lt;sound&gt;">
+                    <label for="q9b">&lt;sound&gt;</label><br>
+                    <input type="radio" id="q9c" name="q9" value="&lt;music&gt;">
+                    <label for="q9c">&lt;music&gt;</label><br>
+                </article>
+
+                <article>
+                    <h3>10. HTML'de yorumlar nasıl yazılır?</h3>
+                    <input type="radio" id="q10a" name="q10" value="&lt;!-- Yorum --&gt;">
+                    <label for="q10a">&lt;!-- Yorum --&gt;</label><br>
+                    <input type="radio" id="q10b" name="q10" value="&lt;comment&gt;Yorum&lt;/comment&gt;">
+                    <label for="q10b">&lt;comment&gt;Yorum&lt;/comment&gt;</label><br>
+                    <input type="radio" id="q10c" name="q10" value="&lt;rem&gt;Yorum&lt;/rem&gt;">
+                    <label for="q10c">&lt;rem&gt;Yorum&lt;/rem&gt;</label><br>
+                </article>
+
+                <input type="submit" value="Quiz'i Gönder">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 <span style="color: rgb(0, 183, 255);">ST</span>Schools tüm hakları saklıdır.</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    </body>
+</html>
